@@ -18,9 +18,12 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "MTBaseKit/Classes/**/**/*.{h,m,mm,c,cpp,swift}",
+  "source_files": [
+    "MTBaseKit/Classes/Private/**/*.{h,m,mm,c,cpp,swift}",
+    "MTBaseKit/Classes/Interface/**/*.{h,m,mm,c,cpp,swift}"
+  ],
   "public_header_files": [
-    "MTBaseKit/Classes/Interface/*.h",
+    "MTBaseKit/Classes/Interface/*",
     "MTBaseKit/Classes/Private/Annotate/Interface/*.h",
     "MTBaseKit/Classes/Private/Router/Interface/*.h",
     "MTBaseKit/Classes/Private/Service/Interface/*.h"
