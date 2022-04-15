@@ -27,27 +27,18 @@
   "subspecs": [
     {
       "name": "Annotate",
-      "platforms": {
-        "ios": "9.0"
-      },
       "source_files": "MTBaseKit/Classes/Private/Annotate/**/*.{h,m,mm,c,cpp,swift}",
       "public_header_files": "MTBaseKit/Classes/Private/Annotate/**/*.h"
     },
     {
       "name": "Router",
-      "platforms": {
-        "ios": "9.0"
-      },
       "source_files": "MTBaseKit/Classes/Private/Router/**/*.{h,m,mm,c,cpp,swift}",
-      "public_header_files": "MTBaseKit/Classes/Private/Router/**/*.h"
+      "public_header_files": "MTBaseKit/Classes/Private/Router/Interface/*.h"
     },
     {
       "name": "Service",
-      "platforms": {
-        "ios": "9.0"
-      },
       "source_files": "MTBaseKit/Classes/Private/Service/**/*.{h,m,mm,c,cpp,swift}",
-      "public_header_files": "MTBaseKit/Classes/Private/Service/**/*.h"
+      "public_header_files": "MTBaseKit/Classes/Private/Service/Interface/*.h"
     }
   ]
 }

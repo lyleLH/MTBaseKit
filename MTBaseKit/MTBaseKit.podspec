@@ -20,22 +20,19 @@ Pod::Spec.new do |s|
 
 
 s.subspec 'Annotate' do |ss|
-       ss.ios.deployment_target = '9.0'
        ss.source_files = 'MTBaseKit/Classes/Private/Annotate/**/*.{h,m,mm,c,cpp,swift}'
        ss.public_header_files = 'MTBaseKit/Classes/Private/Annotate/**/*.h'
  end
 
   s.subspec 'Router' do |ss|
-       ss.ios.deployment_target = '9.0'
        ss.source_files = 'MTBaseKit/Classes/Private/Router/**/*.{h,m,mm,c,cpp,swift}'
-       ss.public_header_files = 'MTBaseKit/Classes/Private/Router/**/*.h'
+       ss.public_header_files = 'MTBaseKit/Classes/Private/Router/Interface/*.h'
 
   end
 
   s.subspec 'Service' do |ss|
-       ss.ios.deployment_target = '9.0'
        ss.source_files = 'MTBaseKit/Classes/Private/Service/**/*.{h,m,mm,c,cpp,swift}'
-       ss.public_header_files = 'MTBaseKit/Classes/Private/Service/**/*.h'
+       ss.public_header_files = 'MTBaseKit/Classes/Private/Service/Interface/*.h'
 
   end
 
