@@ -20,7 +20,7 @@
   },
   "source_files": [
     "MTBaseKit/Classes/Private/**/*.{h,m,mm,c,cpp,swift}",
-    "MTBaseKit/Classes/Interface/**/*.{h,m,mm,c,cpp,swift}"
+    "MTBaseKit/Classes/Interface/*.{h,m,mm,c,cpp,swift}"
   ],
   "public_header_files": [
     "MTBaseKit/Classes/Interface/*",
