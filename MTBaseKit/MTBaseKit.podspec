@@ -14,28 +14,9 @@ Pod::Spec.new do |s|
  
   s.ios.deployment_target = '9.0'
 
-#   s.source_files = 'MTBaseKit/Classes/Private/**/*.{h,m,mm,c,cpp,swift}'
-  s.source_files = 'MTBaseKit/Classes/Interface/*.h'
+  s.source_files = 'MTBaseKit/Classes/**/*.{h,m,mm,c,cpp,swift}'
+  s.public_header_files = 'MTBaseKit/Classes/Interface/*.h' ,'MTBaseKit/Classes/Private/Annotate/Interface/*.h','MTBaseKit/Classes/Private/Router/Interface/*.h','MTBaseKit/Classes/Private/Service/Interface/*.h'
+  s.dependency 'YYModel'
 
-
-
-s.subspec 'Annotate' do |ss|
-       ss.source_files = 'MTBaseKit/Classes/Private/Annotate/**/*.{h,m,mm,c,cpp,swift}'
-       ss.public_header_files = 'MTBaseKit/Classes/Private/Annotate/**/*.h'
- end
-
-  s.subspec 'Router' do |ss|
-       ss.source_files = 'MTBaseKit/Classes/Private/Router/**/*.{h,m,mm,c,cpp,swift}'
-       ss.public_header_files = 'MTBaseKit/Classes/Private/Router/Interface/*.h'
-       ss.dependency 'YYModel'
-       ss.dependency 'MTBaseKit/Annotate'
-  end
-
-  s.subspec 'Service' do |ss|
-       ss.source_files = 'MTBaseKit/Classes/Private/Service/**/*.{h,m,mm,c,cpp,swift}'
-       ss.public_header_files = 'MTBaseKit/Classes/Private/Service/Interface/*.h'
-       ss.dependency 'YYModel'
-       ss.dependency 'MTBaseKit/Annotate'
-  end
 
 end
