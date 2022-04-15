@@ -7,10 +7,10 @@ Pod::Spec.new do |s|
   基础组件 1.静态函数到Mach_O 并在启动时获取到静态函数指针
                        DESC
 
-  s.homepage         = 'https://github.com/Major Tom/MTBaseKit'
+  s.homepage         = 'https://github.com/lyleLH/MTBaseKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Major Tom' => 'v2top1@163.com' }
-  s.source           = { :git => 'https://github.com/Major Tom/MTBaseKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:lyleLH/MTBaseKit.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '9.0'
 
