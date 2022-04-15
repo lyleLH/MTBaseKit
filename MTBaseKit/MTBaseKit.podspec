@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
 #   s.source_files = 'MTBaseKit/Classes/Private/**/*.{h,m,mm,c,cpp,swift}'
   s.source_files = 'MTBaseKit/Classes/Interface/*.h'
-  s.dependency 'YYModel'
+
 
 
 s.subspec 'Annotate' do |ss|
@@ -27,13 +27,15 @@ s.subspec 'Annotate' do |ss|
   s.subspec 'Router' do |ss|
        ss.source_files = 'MTBaseKit/Classes/Private/Router/**/*.{h,m,mm,c,cpp,swift}'
        ss.public_header_files = 'MTBaseKit/Classes/Private/Router/Interface/*.h'
-
+       ss.dependency 'YYModel'
+       ss.dependency 'MTBaseKit/Annotate'
   end
 
   s.subspec 'Service' do |ss|
        ss.source_files = 'MTBaseKit/Classes/Private/Service/**/*.{h,m,mm,c,cpp,swift}'
        ss.public_header_files = 'MTBaseKit/Classes/Private/Service/Interface/*.h'
-
+       ss.dependency 'YYModel'
+       ss.dependency 'MTBaseKit/Annotate'
   end
 
 end
