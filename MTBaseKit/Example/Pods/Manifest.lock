@@ -1,0 +1,77 @@
+PODS:
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MTBaseKit (0.1.0):
+    - MTBaseKit/Annotate (= 0.1.0)
+    - MTBaseKit/Router (= 0.1.0)
+    - MTBaseKit/Service (= 0.1.0)
+    - YYModel
+  - MTBaseKit/Annotate (0.1.0):
+    - YYModel
+  - MTBaseKit/Router (0.1.0):
+    - YYModel
+  - MTBaseKit/Service (0.1.0):
+    - YYModel
+  - MTCategoryComponent (1.3.0):
+    - MTCategoryComponent/Foundation (= 1.3.0)
+    - MTCategoryComponent/UIKit (= 1.3.0)
+  - MTCategoryComponent/Foundation (1.3.0):
+    - MTCategoryComponent/Foundation/Sources (= 1.3.0)
+  - MTCategoryComponent/Foundation/Sources (1.3.0)
+  - MTCategoryComponent/UIKit (1.3.0):
+    - MTCategoryComponent/UIKit/UIColor (= 1.3.0)
+    - MTCategoryComponent/UIKit/UIControl (= 1.3.0)
+    - MTCategoryComponent/UIKit/UIImage (= 1.3.0)
+    - MTCategoryComponent/UIKit/UIImageView (= 1.3.0)
+    - MTCategoryComponent/UIKit/UIResponder (= 1.3.0)
+    - MTCategoryComponent/UIKit/UITableView (= 1.3.0)
+    - MTCategoryComponent/UIKit/UITextField (= 1.3.0)
+    - MTCategoryComponent/UIKit/UIView (= 1.3.0)
+    - MTCategoryComponent/UIKit/UIViewController (= 1.3.0)
+  - MTCategoryComponent/UIKit/UIColor (1.3.0)
+  - MTCategoryComponent/UIKit/UIControl (1.3.0)
+  - MTCategoryComponent/UIKit/UIImage (1.3.0):
+    - MTCategoryComponent/UIKit/UIColor
+    - MTCategoryComponent/UIKit/UIView
+  - MTCategoryComponent/UIKit/UIImageView (1.3.0)
+  - MTCategoryComponent/UIKit/UIResponder (1.3.0)
+  - MTCategoryComponent/UIKit/UITableView (1.3.0)
+  - MTCategoryComponent/UIKit/UITextField (1.3.0)
+  - MTCategoryComponent/UIKit/UIView (1.3.0):
+    - Masonry
+    - MTCategoryComponent/UIKit/UIColor
+  - MTCategoryComponent/UIKit/UIViewController (1.3.0):
+    - MBProgressHUD
+    - MTCategoryComponent/UIKit/UIColor
+    - Toast
+  - Toast (4.0.0)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - MTBaseKit (from `../`)
+  - MTCategoryComponent
+
+SPEC REPOS:
+  "git@github.com:lyleLH/MTSpecs.git":
+    - MTCategoryComponent
+  trunk:
+    - Masonry
+    - MBProgressHUD
+    - Toast
+    - YYModel
+
+EXTERNAL SOURCES:
+  MTBaseKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MTBaseKit: 83f7421aeff00e3d2bb6324380f8ea0c278357d2
+  MTCategoryComponent: 097f709679feff15b613d575f42f4cddfbf6b980
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 7e2f1f8046cd25a5b0397a328099ecead5ae50d3
+
+COCOAPODS: 1.11.3

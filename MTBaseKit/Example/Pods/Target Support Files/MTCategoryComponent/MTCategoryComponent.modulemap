@@ -1,0 +1,6 @@
+framework module MTCategoryComponent {
+  umbrella header "MTCategoryComponent-umbrella.h"
+
+  export *
+  module * { export * }
+}
