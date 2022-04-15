@@ -1,0 +1,28 @@
+{
+  "name": "MTBaseKit",
+  "version": "0.1.0",
+  "summary": "A short description of MTBaseKit.",
+  "description": "基础组件 1.静态函数到Mach_O 并在启动时获取到静态函数指针",
+  "homepage": "https://github.com/Major Tom/MTBaseKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Major Tom": "v2top1@163.com"
+  },
+  "source": {
+    "git": "https://github.com/Major Tom/MTBaseKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MTBaseKit/Classes/**/*.{h,m,mm,c,cpp,swift}",
+  "public_header_files": "MTBaseKit/Classes/Interface/**/*.h",
+  "dependencies": {
+    "YYModel": [
+
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+#source 'https://github.com/lyleLH/MTSpecs.git'
+source 'git@github.com:lyleLH/MTSpecs.git'
+
+source 'https://cdn.cocoapods.org/'
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'MTBaseKit_Example' do
+  pod "MTCategoryComponent"
+  pod 'MTBaseKit', :path => '../'
+
+  target 'MTBaseKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

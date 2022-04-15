@@ -1,0 +1,6 @@
+framework module MTBaseKit {
+  umbrella header "MTBaseKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
