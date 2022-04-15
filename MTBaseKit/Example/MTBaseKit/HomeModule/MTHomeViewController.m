@@ -6,10 +6,17 @@
 #import "MTHomeViewController.h"
 #import <MTBaseKit/MTBaseKitHeader.h>
 #import <MTCategoryComponent/MTCategoryComponentHeader.h>
+#import "MTHomeViewControllerProtocol.h"
+
+
+@interface MTHomeViewController () <MTHomeViewControllerProtocol>
+
+@end
 
 @implementation MTHomeViewController {
 
 }
+
 
 
 @MTRouterRegister() {
@@ -22,6 +29,10 @@
 
 }
 
+@MTModuleServiceRegister(){
+    MTModuleServiceRegisterExecute(MTHomeViewController.class, @protocol(MTHomeViewControllerProtocol), nil);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
@@ -31,5 +42,9 @@
     [self dismissViewControllerAnimated:YES completion:^{
 
     }];
+}
+
+- (void)helloWorld {
+    NSLog(@"hello world ");
 }
 @end

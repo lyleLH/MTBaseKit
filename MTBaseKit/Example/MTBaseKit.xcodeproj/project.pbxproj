@@ -22,7 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		71F41524C05C1DBFCE23A87B /* MTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F415836BF63A4256007DD7 /* MTHomeViewController.m */; };
+		71F41AF6F75CD0716942EE48 /* MTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F41A20B2D4C2D82A82F5A4 /* MTHomeViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C5889F3AA6EF8FEB41E3E33B /* Pods_MTBaseKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE628250803FD9BF571E9E6 /* Pods_MTBaseKit_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -63,8 +63,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		71F415836BF63A4256007DD7 /* MTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTHomeViewController.m; sourceTree = "<group>"; };
-		71F41913B79AD4ECE155267E /* MTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHomeViewController.h; sourceTree = "<group>"; };
+		71F4103EADC13348F5569105 /* MTHomeViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHomeViewControllerProtocol.h; sourceTree = "<group>"; };
+		71F4125D7F2CFA46FCA4A596 /* MTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHomeViewController.h; sourceTree = "<group>"; };
+		71F41A20B2D4C2D82A82F5A4 /* MTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTHomeViewController.m; sourceTree = "<group>"; };
 		745E27C1C464B37587ACB3B8 /* Pods-MTBaseKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTBaseKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-MTBaseKit_Example/Pods-MTBaseKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5B441F6419D01E0A0D89338 /* Pods_MTBaseKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTBaseKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,8 +144,7 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				71F415836BF63A4256007DD7 /* MTHomeViewController.m */,
-				71F41913B79AD4ECE155267E /* MTHomeViewController.h */,
+				71F41C12A2E9AD38562F11BD /* HomeModule */,
 			);
 			name = "Example for MTBaseKit";
 			path = MTBaseKit;
@@ -188,6 +188,16 @@
 				1C1E86F0BC5E7AC363621371 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		71F41C12A2E9AD38562F11BD /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				71F4125D7F2CFA46FCA4A596 /* MTHomeViewController.h */,
+				71F41A20B2D4C2D82A82F5A4 /* MTHomeViewController.m */,
+				71F4103EADC13348F5569105 /* MTHomeViewControllerProtocol.h */,
+			);
+			path = HomeModule;
 			sourceTree = "<group>";
 		};
 		F79553F7C2CEE8F773CC0DC9 /* Pods */ = {
@@ -382,7 +392,7 @@
 				6003F59E195388D20070C39A /* MTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				71F41524C05C1DBFCE23A87B /* MTHomeViewController.m in Sources */,
+				71F41AF6F75CD0716942EE48 /* MTHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

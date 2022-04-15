@@ -2,6 +2,15 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MTBaseKit (0.1.0):
+    - MTBaseKit/Annotate (= 0.1.0)
+    - MTBaseKit/Router (= 0.1.0)
+    - MTBaseKit/Service (= 0.1.0)
+    - YYModel
+  - MTBaseKit/Annotate (0.1.0):
+    - YYModel
+  - MTBaseKit/Router (0.1.0):
+    - YYModel
+  - MTBaseKit/Service (0.1.0):
     - YYModel
   - MTCategoryComponent (1.3.0):
     - MTCategoryComponent/Foundation (= 1.3.0)
@@ -58,7 +67,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MTBaseKit: 5789faa193312e83e7b45993a7679533b6fe423f
+  MTBaseKit: 83f7421aeff00e3d2bb6324380f8ea0c278357d2
   MTCategoryComponent: 097f709679feff15b613d575f42f4cddfbf6b980
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30

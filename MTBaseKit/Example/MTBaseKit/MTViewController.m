@@ -8,6 +8,8 @@
 
 #import "MTViewController.h"
 #import <MTBaseKit/MTBaseKitHeader.h>
+#import "MTHomeViewControllerProtocol.h"
+#import "HomeModule/MTHomeViewControllerProtocol.h"
 
 @interface MTViewController ()
 
@@ -30,6 +32,12 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [[MTRouterComponent shareInstance] mt_openUrl:@"Home"];
+    NSError *err;
+    __kindof Class<MTHomeViewControllerProtocol> cls = MTModuleServiceWithProtocol(@protocol(MTHomeViewControllerProtocol), &err);
+    if (!err) {
+        NSObject <MTHomeViewControllerProtocol>*obj = [cls new];
+        [obj helloWorld];
+    }
 }
 
 @end
