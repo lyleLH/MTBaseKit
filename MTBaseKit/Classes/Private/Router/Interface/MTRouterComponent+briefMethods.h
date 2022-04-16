@@ -60,6 +60,7 @@ void routerOpenUrlRequest(MTRouterUrlRequest *request, MTRouterUrlCompletion com
 void deregisterAllUrls(void);
 
 - (void)mt_openUrl:(NSString *)url;
+- (void)mt_openUrl:(NSString *)url param:(NSDictionary *)param ;
 @end
 
 #if defined(__cplusplus)

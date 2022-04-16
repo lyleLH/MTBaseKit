@@ -24,13 +24,20 @@ void routerOpenUrlRequest(MTRouterUrlRequest *request, MTRouterUrlCompletion com
 void deregisterAllUrls(void){
     [RouterCenter() deregisterAllUrls];
 }
+
 - (void)mt_openUrl:(NSString *)url {
+    
+    [self mt_openUrl:url param:@{}];
+}
+
+- (void)mt_openUrl:(NSString *)url param:(NSDictionary *)param {
     MTRouterUrlRequest * request  = [MTRouterUrlRequest instanceWithBuilder:^(MTRouterUrlRequest *builder) {
         builder.url = url;
+        builder.paramater = param;
     }];
     [RouterCenter() openUrl:request complete:^(MTRouterUrlResponse *urlResponse){
 
     }];
-
 }
+
 @end
