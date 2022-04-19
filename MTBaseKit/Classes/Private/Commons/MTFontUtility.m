@@ -25,7 +25,7 @@ enum {
     _FT_STYLE_NOTO_BOLD,
 };
 
-@implementation DGPassengerFontUtility
+@implementation MTFontUtility
 
 + (UIFont *)fontWithDescription:(NSString *)ftDesc {
     NSArray *ary = [ftDesc componentsSeparatedByString:@","];
