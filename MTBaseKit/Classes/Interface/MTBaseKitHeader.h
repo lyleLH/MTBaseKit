@@ -11,4 +11,5 @@
 #import "MTAnnotateHeader.h"
 #import "MTRouterComponentHeader.h"
 #import "MTModuleServiceComponentHeader.h"
+#import "MTMacros.h"
 #endif /* MTBaseKitHeader_h */
