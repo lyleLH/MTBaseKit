@@ -1,6 +1,6 @@
 //
-//  DGPassengerFontUtility.h
-//  DGPassenger
+//  MTFontUtility.h
+//   
 //
 //  Created by Tom.Liu on 2021/3/5.
 //  Copyright © 2021 Tom.Liu. All rights reserved.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DGPassengerFontUtility : NSObject
+@interface MTFontUtility : NSObject
 + (UIFont *)fontWithDescription:(NSString *)ftDesc ;
 @end
 

@@ -1,12 +1,12 @@
 //
-//  DGPassengerFontUtility.m
-//  DGPassenger
+//  MTFontUtility.m
+//
 //
 //  Created by Tom.Liu on 2021/3/5.
 //  Copyright © 2021 Tom.Liu. All rights reserved.
 //
 
-#import "DGPassengerFontUtility.h"
+#import "MTFontUtility.h"
 
 enum {
     _FT_STYLE_SYS_NORMAL,
