@@ -12,6 +12,7 @@
 
 #import "MTAnnotateHeader.h"
 #import "MTBaseKitHeader.h"
+#import "MTMacros.h"
 #import "MTModuleServiceComponentHeader.h"
 #import "MTRouterComponentHeader.h"
 #import "MTAnnotate.h"
