@@ -23,7 +23,7 @@
     "MTBaseKit/Classes/Interface/*.{h,m,mm,c,cpp,swift}"
   ],
   "public_header_files": [
-    "MTBaseKit/Classes/Interface/*",
+    "MTBaseKit/Classes/Interface/*.{h,m}",
     "MTBaseKit/Classes/Private/Annotate/Interface/*.h",
     "MTBaseKit/Classes/Private/Router/Interface/*.h",
     "MTBaseKit/Classes/Private/Service/Interface/*.h"

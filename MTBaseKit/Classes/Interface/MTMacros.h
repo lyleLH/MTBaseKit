@@ -6,11 +6,11 @@
 //  Copyright © 2021 Tom.Liu. All rights reserved.
 //
 
+
+
 #ifndef MTMacros_h
 #define MTMacros_h
 
-#import "MTFontUtility.h"
-#import "MTDeviceUtility.h"
 ////////////////////////////////////////////////////////////////
 //MARK:-
 //MARK: 机型适配相关 -- start
@@ -44,7 +44,7 @@
 #define kIS_iPhoneXsMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
 
 //判断是否IPHONE_X后的机型全面屏带安全区域
-#define kIPHONE_X_LATER ([MTDeviceUtility isIphoneXLater])
+#define kIPHONE_X_LATER ([UIApplication sharedApplication].delegate.window.safeAreaInsets.bottom>0.0)
 //状态栏的高度
 #define kSTATUS_GAP (kIPHONE_X_LATER? 44 : 20)
 //导航栏的高度
@@ -74,33 +74,6 @@
 //MARK:-
 ////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////
-//MARK:-
-//MARK: 字体工具-- start
-//MARK:-
-////////////////////////////////////////////////////////////////
-
-
-#define N_R(value) [MTFontUtility fontWithDescription:_sfmt(@"noto_regular,%d",value)]
-#define N_M(value) [MTFontUtility fontWithDescription:_sfmt(@"noto_medium,%d",value)]
-#define N_D(value) [MTFontUtility fontWithDescription:_sfmt(@"noto_demi,%d",value)]
-#define N_B(value) [MTFontUtility fontWithDescription:_sfmt(@"noto_bold,%d",value)]
-
-#define D_B(value) [UIFont fontWithName:@"DIN-BOLD" size:value]
-#define D_M(value) [UIFont fontWithName:@"DIN-Medium" size:value]
-#define D_R(value) [UIFont fontWithName:@"DIN-Regular" size:value]
-#define L_R(value) [UIFont fontWithName:@"Lato-Regular" size:value]
-
-
-////////////////////////////////////////////////////////////////
-//MARK:-
-//MARK: 字体工具-- end
-//MARK:-
-////////////////////////////////////////////////////////////////
-
-
-
-
 
 ////////////////////////////////////////////////////////////////
 //MARK:-
@@ -110,11 +83,9 @@
 
 
 
-#define AutoFitWidth(val) ([MTDeviceUtility fittedWidth:val])
-#define AutoFitHeight(val) ([MTDeviceUtility fittedHeight:val])
-
 #define FitFont(val,val1) ((kIS_IPHONE_5 || kIS_IPHONE_4_OR_LESS)?val:val1)
 #define FitAllFont(val,val1,val2) ((kIS_IPHONE_5 || kIS_IPHONE_4_OR_LESS)?val:((kIS_IPHONE_6||kIS_iPhoneX)?val1:val2))
+
 
 
 ////////////////////////////////////////////////////////////////
