@@ -13,8 +13,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'git@github.com:lyleLH/MTBaseKit.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '9.0'
-
-  s.source_files = 'MTBaseKit/Classes/**/*'
+  s.source_files = 'MTBaseKit/Classes/**/**/**/*'
 #   s.public_header_files = 'MTBaseKit/Classes/Interface/*.{h,m}' ,'MTBaseKit/Classes/Private/Annotate/Interface/*.h','MTBaseKit/Classes/Private/Router/Interface/*.h','MTBaseKit/Classes/Private/Service/Interface/*.h'
   s.dependency 'YYModel'
 
