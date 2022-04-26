@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
  
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'MTBaseKit/Classes/Private/**/*.{h,m,mm,c,cpp,swift}','MTBaseKit/Classes/Interface/*.{h,m,mm,c,cpp,swift}'
+  s.source_files = 'MTBaseKit/Classes/**/*.{h,m,mm,c,cpp,swift}'
   s.public_header_files = 'MTBaseKit/Classes/Interface/*.{h,m}' ,'MTBaseKit/Classes/Private/Annotate/Interface/*.h','MTBaseKit/Classes/Private/Router/Interface/*.h','MTBaseKit/Classes/Private/Service/Interface/*.h'
   s.dependency 'YYModel'
 
