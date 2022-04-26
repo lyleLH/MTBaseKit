@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTBaseKit'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of MTBaseKit.'
   s.description      = <<-DESC
   基础组件 1.静态函数到Mach_O 并在启动时获取到静态函数指针
